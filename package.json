@@ -1,0 +1,44 @@
+{
+  "name": "typescript-logger",
+  "version": "0.0.1",
+  "description": "A simple to use Logger for Typescript",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "showcase": "nodemon --enable-source-maps dist/showcase.js",
+    "test": "echo 'No unit tests yet...'",
+    "test:future": "vitest",
+    "test:coverage": "vitest run --coverage"
+  },
+  "files": [
+    "dist/**/*.js",
+    "dist/**/*.d.ts"
+  ],
+  "author": "eltharynd",
+  "keywords": [
+    "node",
+    "nodejs",
+    "typescript",
+    "logger"
+  ],
+  "homepage": "https://github.com/eltharynd/Typescript-Logger#readme",
+  "bugs": {
+    "url": "https://github.com/eltharynd/Typescript-Logger/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eltharynd/Typescript-Logger.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^5.6.2",
+    "node-json-logger": "^0.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.0.0",
+    "@types/node-json-logger": "^0.0.3",
+    "nodemon": "^3.1.14",
+    "typescript": "^6.0.3"
+  }
+}
