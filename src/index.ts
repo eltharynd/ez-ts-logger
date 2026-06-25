@@ -223,7 +223,7 @@ export class Logger {
 					chalk.magenta(
 						`[${new Date().toLocaleString()}] [CRIT] -${typeof args !== 'string' && args.message ? ` ${args.message} ` : ''}`,
 					),
-					typeof args === 'string' ? chalk.redBright(args) : args,
+					typeof args === 'string' ? chalk.magentaBright(args) : args,
 				)
 	}
 
